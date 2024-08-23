@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami - Perpustakaan Kota Bandung</title>
+    <style>
+        @font-face {
+            font-family: "Playfair Display", serif;
+            src: @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Moderustic:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: "Playfair Display", serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1;
+            background-image: url('https://dwitours.com/wp-content/uploads/2022/07/GEDUNG-SATE-2-scaled.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        header {
+            background-color: rgba(100, 100, 0, 0.8);
+            color: white;
+            font-size: large;
+            padding: 5px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+
+        .content {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1rem;
+        }
+
+        input[type="submit"] {
+            background-color: #EDB707;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #c5a000;
+        }
+
+        footer {
+            background-color: rgba(100, 100, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .contact-info {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CONTACT US</h1>
+    </header>
+
+    <div class="content">
+        <div class="contact-info">
+            <p><strong>Telepon:</strong> (+62) 1234-5678-9101</p>
+            <p><strong>Email:</strong> info@perpustakaanbandung.go.id</p>
+        </div>
+
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Nama Anda" required>
+            <input type="email" name="email" placeholder="Email Anda" required>
+            <textarea name="message" rows="5" placeholder="Pesan Anda" required></textarea>
+            <input type="submit" value="Kirim Pesan">
+        </form>
+    </div>
+
+    </footer>
+</body>
+
+</html>
